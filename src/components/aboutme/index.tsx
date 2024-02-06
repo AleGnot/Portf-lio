@@ -33,11 +33,11 @@ function About() {
                     <AboutText>
                         {isEnglish?
                             `My name is Alessandro Garcia, also known as Alex, I'm 20 years old and am currently trying to kickstart my carrer as a developer.
-                            I've been in this field for about 5 months, but I still don't have significant amount of professional experience.
+                            I've been in this field for about 6 months, but I still don't have significant amount of professional experience.
                             I'm constantly searching for new ways to improve and expand my knowledge. I love to code and am striving to turn it into my profession.`
                             :
                             `Meu nome é Alessandro Garcia, também conhecido como Alex. Tenho 20 anos e estou iniciando minha
-                            carreira como desenvolvedor. Estou na área hà 5 meses, porém ainda não possuo muita experiência profissional nela.
+                            carreira como desenvolvedor. Estou na área hà 6 meses, porém ainda não possuo muita experiência profissional nela.
                             Ando sempre buscando novas formas de me aperfeiçoar e expandir meu conhecimento, adoro programar e estou tentando transformar
                             essa paixão em meu trabalho.`
                         }
