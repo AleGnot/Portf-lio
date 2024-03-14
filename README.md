@@ -4,7 +4,7 @@
 
 # Sobre o Projeto
 
-Esse projeto é o meu site portfólio que tem o intuito de me apresentar ao recrutador assim como, também, mostrar alguns de meu projetos.
+Esse projeto é o meu site portfólio que tem o intuito de me apresentar ao recrutador assim como, também, mostrar alguns de meus projetos.
 Também possuí a opção de trocar o idioma para inglês, servindo também como um portfólio internacional.
 
 - [Clique aqui para acessá-lo](https://portifol0.netlify.app)
