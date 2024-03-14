@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 
-Currently, two official plugins are available:
+# Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esse projeto é o meu site portfólio que tem o intuito de me apresentar ao recrutador assim como, também, mostrar alguns de meu projetos.
+Também possuí a opção de trocar o idioma para inglês, servindo também como um portfólio internacional.
 
-## Expanding the ESLint configuration
+- [Clique aqui para acessá-lo](https://portifol0.netlify.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Layout Mobile
 
-- Configure the top-level `parserOptions` property like this:
+![Mobile 1](/.github/PreviewMobile2.jpg) ![Mobile 2](/.github/PreviewMobile1.jpg)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Layout Web
+
+![Web 1](/.github/Preview1.png)
+
+![Web 2](/.github/Preview2.png)
+
+## Tecnologias
+
+- React
+- TypeScipt
+- CSS
+- HTML
+
+### Bibliotecas
+
+- Styled Components
+- Swiper
+- FontAwsome
+
+# Clonando o Projeto
+
+Requisitos: npm / yarn
+
+```bash
+git clone https://github.com/AleGnot/Portf-lio
+
+# Instalar dependências
+npm install
+
+# Rodar o Projeto
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
