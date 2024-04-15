@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import FateProj from "../../assets/expositorTemplateFate.png";
 import VeiaProj from "../../assets/expositorTemplateVeia.png";
+import YoutubeProj from "../../assets/expositorTemplateYoutube.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,6 +15,14 @@ import { LangContext } from "../../contexts/lengContext";
 register();
 
 const itens = [
+    {
+        name: "Clone da Interface do Youtube",
+        describe: `Um projeto que imita a interface do youtube e algumas de suas principais funcionalidades.`,
+        describe2: `Este projeto utiliza-se tanto da API publica do youtube como, também, de uma API 
+        desenvolvida por mim para ter acesso aos vídeos e a funcionalidade de login.`,
+        image: YoutubeProj,
+        link: "https://github.com/AleGnot/InterfaceYouTube-Clone"
+    },
     {
         name: "Fate/GO NA servant-list",
         describe: `Um projeto simples que utiliza a API criada pela Atlas Academy e tem como intuito listar todos
@@ -44,6 +53,14 @@ const itens = [
 
 const engIten = [
     {
+        name: "Youtube's Interface Clone",
+        describe: `A project that mimics Youtube's interface and some of its principal functionalities.`,
+        describe2: `This project uses both the public Youtube API and also an API developed by me to access
+        videos and the login feature.`,
+        image: YoutubeProj,
+        link: "https://github.com/AleGnot/InterfaceYouTube-Clone"
+    },
+    {
         name: "Fate/GO NA servant-list",
         describe: `A simple project that uses the Atlas Academy API to display and list every character available
         to date on the NA server of the game.`,
@@ -54,7 +71,7 @@ const engIten = [
     {
         name: "Tic tac toe",
         describe: `This is yet another simple project that is basically a tic-tac-toe game.`,
-        describe2:`With this project, I learned more about CSS and how to style components to make future projects better
+        describe2: `With this project, I learned more about CSS and how to style components to make future projects better
         and more visually appealing.`,
         image: VeiaProj,
         link: "https://github.com/AleGnot/Veia-game-ticTacToe"
@@ -69,16 +86,16 @@ const engIten = [
 ]
 
 function Projects() {
-    const {isEnglish} = useContext(LangContext);
+    const { isEnglish } = useContext(LangContext);
 
-    
+
     const [slidePerView, setSlidePerview] = useState(2);
 
     useEffect(() => {
-        function resizeHandler(){
-            if(window.innerWidth < 769){
+        function resizeHandler() {
+            if (window.innerWidth < 769) {
                 setSlidePerview(1);
-            }else{
+            } else {
                 setSlidePerview(2);
             }
         }
@@ -96,39 +113,39 @@ function Projects() {
         if (isEnglish === true) {
             return (
                 <>
-                {engIten.map((itens) => (
-                    <SwiperSlide>
-                        <CardContainer>
-                            <Card>
-                                <CardImg alt="" src={itens.image}/>
-                                <a href={itens.link} target="blank" rel="noopener noreferrer">
-                                    <CardTitle>{itens.name}</CardTitle>
-                                </a>
-                                <CardDescr>{itens.describe}</CardDescr>
-                                <CardDescr>{itens.describe2}</CardDescr>
-                            </Card>
-                        </CardContainer>
-                    </SwiperSlide>
-                ))}
+                    {engIten.map((itens) => (
+                        <SwiperSlide>
+                            <CardContainer>
+                                <Card>
+                                    <CardImg alt="" src={itens.image} />
+                                    <a href={itens.link} target="blank" rel="noopener noreferrer">
+                                        <CardTitle>{itens.name}</CardTitle>
+                                    </a>
+                                    <CardDescr>{itens.describe}</CardDescr>
+                                    <CardDescr>{itens.describe2}</CardDescr>
+                                </Card>
+                            </CardContainer>
+                        </SwiperSlide>
+                    ))}
                 </>
             )
-        }else {
+        } else {
             return (
                 <>
-                {itens.map((engIten) => (
-                    <SwiperSlide>
-                        <CardContainer>
-                            <Card>
-                                <CardImg alt="" src={engIten.image}/>
-                                <a href={engIten.link} target="blank" rel="noopener noreferrer">
-                                    <CardTitle>{engIten.name}</CardTitle>
-                                </a>
-                                <CardDescr>{engIten.describe}</CardDescr>
-                                <CardDescr>{engIten.describe2}</CardDescr>
-                            </Card>
-                        </CardContainer>
-                    </SwiperSlide>
-                ))}
+                    {itens.map((engIten) => (
+                        <SwiperSlide>
+                            <CardContainer>
+                                <Card>
+                                    <CardImg alt="" src={engIten.image} />
+                                    <a href={engIten.link} target="blank" rel="noopener noreferrer">
+                                        <CardTitle>{engIten.name}</CardTitle>
+                                    </a>
+                                    <CardDescr>{engIten.describe}</CardDescr>
+                                    <CardDescr>{engIten.describe2}</CardDescr>
+                                </Card>
+                            </CardContainer>
+                        </SwiperSlide>
+                    ))}
                 </>
             )
         }
@@ -139,7 +156,7 @@ function Projects() {
             <Swiper
                 slidesPerView={slidePerView}
                 navigation
-                style={{display:'flex', justifyContent: 'center', alignItems: 'center', height: '95%', width: '100%'}}
+                style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '95%', width: '100%' }}
             >
                 {lenguageText()}
             </Swiper>
